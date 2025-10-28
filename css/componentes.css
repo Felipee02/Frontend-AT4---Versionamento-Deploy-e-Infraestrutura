@@ -1,0 +1,72 @@
+button {
+  background-color: var(--cor-secundaria);
+  color: white;
+  border: none;
+  padding: var(--esp-2) var(--esp-3);
+  border-radius: 8px;
+  font-size: var(--fs-md);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #3b7d2e;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  background-color: var(--cor-neutra-media);
+  cursor: not-allowed;
+}
+
+article {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: var(--esp-3);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-2);
+}
+
+input, select {
+  padding: var(--esp-1);
+  border: 1px solid var(--cor-neutra-media);
+  border-radius: 6px;
+}
+
+input:focus, select:focus {
+  outline: 2px solid var(--cor-primaria);
+}
+
+.alerta {
+  background-color: var(--cor-sucesso);
+  color: white;
+  padding: var(--esp-2);
+  border-radius: 8px;
+  text-align: center;
+  margin-top: var(--esp-3);
+}
+/* === AJUSTE DAS IMAGENS NOS CARDS === */
+.grid-12 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  object-fit: cover;
+}
+
+/* Centralizar os textos e manter espaçamento entre os cards */
+.grid-12 article {
+  background-color: var(--cor-neutra-clara);
+  padding: var(--esp-2);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}

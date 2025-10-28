@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - ONG Amigos Fiéis</title>
     <meta name="description" content="Cadastre-se como voluntário, doador ou apoiador da ONG Amigos Fiéis.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/componentes.css">
 </head>
 <body>
     <header>
-        <center><h1>ONG Amigos Fiéis</h1></center>
+        <h1>Ong Amigos Fiéis</h1>
         <hr>
         <nav aria-label="Navegação principal">
             <ul>
@@ -18,7 +20,6 @@
             </ul>
         </nav>
     </header>
-
     <main>
         <hr>
         <section aria-labelledby="cadastro">
@@ -44,7 +45,6 @@
 
                     <label for="nascimento">Data de nascimento:</label>
 <input type="date" id="nascimento" name="nascimento" min="1920-01-01" required>
-
 <script>
     window.addEventListener('DOMContentLoaded', () => {
         const inputData = document.getElementById("nascimento");
@@ -55,7 +55,6 @@
         inputData.max = `${ano}-${mes}-${dia}`;
     });
 </script>
-
                 </fieldset>
 
                 <br>
@@ -86,9 +85,7 @@
                         <option value="DF">DF</option>
                     </select>
                 </fieldset>
-
                 <br>
-
                 <fieldset>
                     <legend>Interesse</legend>
                     <label for="perfil">Quero me cadastrar como:</label>
@@ -104,16 +101,13 @@
                 <button type="submit">Enviar Cadastro</button>
             </form>
         </section>
-
-        <!-- Script fica aqui, no final do main -->
         <script>
             function mostrarMensagem() {
                 alert("Cadastro enviado com sucesso! 🐾");
             }
         </script>
     </main>
-
-    <footer align="right">
+    <footer>
         <p>&copy; 2025 ONG Amigos Fiéis. Todos os direitos reservados.</p>
     </footer>
 </body>

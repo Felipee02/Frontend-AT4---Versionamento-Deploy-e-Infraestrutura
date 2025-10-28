@@ -1,0 +1,166 @@
+:root {
+  --cor-primaria: #adb0d8;
+  --cor-secundaria: #4e9f3d;
+  --cor-neutra-clara: #ffffff;
+  --cor-neutra-media: #666666;
+  --cor-neutra-escura: #333;
+  --cor-acento: #ffd166;
+  --cor-info: #118ab2;
+  --cor-sucesso: #06d6a0;
+  --cor-erro: #ef476f;
+
+  --fonte-principal: 'Poppins', sans-serif;
+  --fs-xs: 12px;
+  --fs-sm: 14px;
+  --fs-md: 16px;
+  --fs-lg: 20px;
+  --fs-xl: 28px;
+
+  --esp-1: 8px;
+  --esp-2: 16px;
+  --esp-3: 24px;
+  --esp-4: 32px;
+  --esp-5: 48px;
+  --esp-6: 64px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fonte-principal);
+  color: var(--cor-neutra-escura);
+  background-color: var(--cor-neutra-clara);
+}
+
+h1, h2, h3 {
+  color: var(--cor-primaria);
+}
+
+header {
+  background: var(--cor-primaria);
+  color: white;
+  padding: var(--esp-2);
+  text-align: center;
+
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: var(--esp-2);
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--cor-acento);
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: var(--esp-3);
+  display: grid;
+  gap: var(--esp-3);
+}
+
+@media (max-width: 1024px) {
+  main {
+    padding: var(--esp-2);
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: var(--fs-lg);
+  }
+  body {
+    font-size: var(--fs-sm);
+  }
+}
+header {
+  background-color: #adb0d8; 
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #f1c40f;
+}
+
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--esp-3);
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-6 {
+  grid-column: span 6;
+}
+
+.col-12 {
+  grid-column: span 12;
+}
+
+@media (max-width: 1024px) {
+  .col-4 {
+    grid-column: span 6;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-4, .col-6, .col-12 {
+    grid-column: span 12;
+  }
+}
+footer {
+    text-align: right;
+    padding: var(--esp-2);
+}
+form fieldset {
+    margin-bottom: var(--esp-4);
+}
+
+form input, form select {
+    margin-bottom: var(--esp-2);
+}
