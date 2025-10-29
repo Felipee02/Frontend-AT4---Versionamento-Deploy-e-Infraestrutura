@@ -53,7 +53,7 @@ input:focus, select:focus {
   text-align: center;
   margin-top: var(--esp-3);
 }
-/* === AJUSTE DAS IMAGENS NOS CARDS === */
+
 .grid-12 img {
   width: 100%;
   height: auto;
@@ -62,11 +62,31 @@ input:focus, select:focus {
   object-fit: cover;
 }
 
-/* Centralizar os textos e manter espaçamento entre os cards */
 .grid-12 article {
   background-color: var(--cor-neutra-clara);
   padding: var(--esp-2);
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
+}
+.toast {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: var(--cor-sucesso);
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  border-radius: 6px;
+  position: fixed;
+  z-index: 100;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: visibility 0.3s, opacity 0.3s;
+  opacity: 0;
+}
+
+.toast.show {
+  visibility: visible;
+  opacity: 1;
 }
