@@ -10,7 +10,7 @@
   <style>
 
     header h1 {
-      border-bottom: 2px solid white;
+      border-bottom: 1px solid white;
       padding-bottom: 10px;
       margin-bottom: 10px;
     }
@@ -25,6 +25,11 @@
 <body>
   <header>
     <h1>Ong Amigos Fiéis</h1>
+    <div class="tema-controles" role="group" aria-label="Controle de contraste e tema">
+  <button id="btnDarkMode" aria-pressed="false">🌙 Modo Escuro</button>
+  <button id="btnContraste" aria-pressed="false">🌓 Alto Contraste</button>
+</div>
+<hr>
     <nav aria-label="Navegação principal">
       <ul>
         <li><a href="#" data-page="inicio">Início</a></li>
@@ -32,6 +37,7 @@
         <li><a href="#" data-page="cadastro">Cadastro</a></li>
       </ul>
     </nav>
+    
   </header>
 
   <main>

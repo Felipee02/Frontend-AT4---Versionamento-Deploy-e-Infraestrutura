@@ -164,3 +164,89 @@ form fieldset {
 form input, form select {
     margin-bottom: var(--esp-2);
 }
+.tema-controles {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 0.5rem 0;
+}
+
+.tema-controles button {
+  background-color: var(--cor-principal);
+  color: #fff;
+  border: none;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.tema-controles button:hover,
+.tema-controles button:focus {
+  transform: scale(1.08);
+  outline: 2px solid var(--cor-secundaria);
+}
+
+.tema-controles button[aria-pressed="true"] {
+  background-color: var(--cor-secundaria);
+  color: #000;
+}
+
+.linha-separadora {
+  border: none;
+  border-top: 2px solid var(--cor-principal);
+  width: 85%;
+  margin: 0.8rem auto;
+}
+
+body.modo-escuro {
+  background-color: #121212;
+  color: #e4e4e4;
+}
+
+body.modo-escuro header,
+body.modo-escuro footer {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+body.modo-escuro nav a {
+  color: #fff;
+}
+
+body.modo-escuro nav a:hover {
+  color: var(--cor-secundaria);
+}
+
+body.alto-contraste {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+body.alto-contraste a {
+  color: #ff0 !important;
+  text-decoration: underline;
+}
+
+body.alto-contraste header,
+body.alto-contraste footer {
+  background-color: #000 !important;
+  color: #fff !important;
+  border-top: 2px solid #ff0;
+  border-bottom: 2px solid #ff0;
+}
+
+body.alto-contraste button {
+  background-color: #ff0 !important;
+  color: #000 !important;
+  border: 2px solid #fff;
+}
+
+body,
+header,
+footer,
+main {
+  transition: all 0.4s ease-in-out;
+}
